@@ -10,16 +10,11 @@ func happyBirthday(age: Int) {
 }
 
 
+
 func getAge(name: String) -> Int {
     return 29
 }
 
-// Uncomment to see the error
-/*
-func badGetAge(name: String) -> Int {
-    print("\(name) is 29")
-}
-*/
 
 
 let friend = "Emily"
@@ -31,6 +26,8 @@ func birthdayGreeting(age: Int) -> String {
     return "Happy birthday #\(age)!"
 }
 
+birthdayGreeting(30)
+
 var greeting = birthdayGreeting(30)
 print(greeting)
 
@@ -40,6 +37,8 @@ func getAgeAndCongratulate(name: String) -> Int {
     print("Happy \(age)th birthday, \(name)!")
     return age
 }
+
+getAgeAndCongratulate("Wing")
 
 let friend2 = "Pete"
 var friend2Age = getAgeAndCongratulate(friend2)
